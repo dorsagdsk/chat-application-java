@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="439.0" style="-fx-background-color: black; -fx-border-color: #ff7700; -fx-border-width: 6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <top>
+      <Label prefHeight="47.0" prefWidth="115.0" text="login page" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Monotype Corsiva" size="29.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.8374384236453202" endY="0.8472906403940886" startY="1.0">
+               <stops>
+                  <Stop color="#ff4a00" />
+                  <Stop color="#fff830ac" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="427.0" spacing="10.0">
+               <children>
+                  <Label text="username" textFill="#ffaa00">
+                     <font>
+                        <Font name="MV Boli" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userFLD" prefHeight="37.0" prefWidth="221.0" promptText="username" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text=" password" textFill="#ffaa00">
+                     <font>
+                        <Font name="MV Boli" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="passFLD" prefHeight="37.0" prefWidth="222.0" promptText="password" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <VBox prefHeight="91.0" prefWidth="427.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="200.0">
+               <children>
+                  <Button fx:id="BTNlogin" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loginAction" text="login" textFill="#ff7700">
+                     <font>
+                        <Font name="Monotype Corsiva" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTNback" mnemonicParsing="false" onAction="#backAc" text="Back" textFill="#ff7700">
+                     <font>
+                        <Font name="Monotype Corsiva" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

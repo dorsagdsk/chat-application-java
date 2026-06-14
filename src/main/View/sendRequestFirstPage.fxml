@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="264.0" prefWidth="420.0" style="-fx-background-color: black; -fx-border-width: 5; -fx-border-color: #ff6f00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SendRequestFRTPageController">
+   <top>
+      <Label text="Send Request" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Monotype Corsiva" size="39.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.6354679802955665">
+               <stops>
+                  <Stop color="#eb870c" />
+                  <Stop color="#464444" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </top>
+   <bottom>
+      <VBox prefHeight="66.0" prefWidth="420.0" spacing="50.0" style="-fx-background-color: #434343;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <padding>
+                  <Insets bottom="30.0" left="150.0" right="30.0" top="30.0" />
+               </padding>
+               <children>
+                  <Button fx:id="closeBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#backAc" prefHeight="49.0" prefWidth="110.0" style="-fx-background-color: #ff7700; -fx-border-width: 2; -fx-border-color: #756969;" text="back" textFill="LAVENDER">
+                     <font>
+                        <Font name="Century Schoolbook Bold Italic" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <VBox alignment="CENTER" prefHeight="85.0" prefWidth="420.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="140.0" prefWidth="239.0" spacing="20.0">
+               <children>
+                  <Label text="Username" textFill="#ff6f00">
+                     <font>
+                        <Font name="Monotype Corsiva" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameFLD" prefHeight="40.0" prefWidth="175.0" promptText="Username">
+                     <font>
+                        <Font name="Century Schoolbook Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="searchBTN" mnemonicParsing="false" onAction="#searchHandler" prefHeight="30.0" prefWidth="70.0" text="check" textFill="#57524d">
+                     <font>
+                        <Font name="Monotype Corsiva" size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

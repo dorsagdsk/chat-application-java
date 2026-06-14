@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+
+<BorderPane prefHeight="294.0" prefWidth="377.0" style="-fx-border-color: #ff7700; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SendRequestSCDPageController">
+   <top>
+      <Label text="Send Request to" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="23.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="228.0" prefWidth="351.0" style="-fx-background-color: #756969;"
+            BorderPane.alignment="CENTER">
+         <Label fx:id="usernameFLD" alignment="CENTER" blendMode="MULTIPLY" prefHeight="33.0" prefWidth="183.0"
+                style="-fx-border-color: #ff6f00; -fx-border-width: 2;">
+            <font>
+               <Font name="Century Schoolbook Bold Italic" size="19.0"/>
+            </font>
+         </Label>
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0"
+               style="-fx-background-color: #434343;">
+            <Button fx:id="sendBTN" blendMode="MULTIPLY" mnemonicParsing="false" onAction="#sendHandler"
+                    prefHeight="42.0" prefWidth="66.0" style="-fx-background-color: #ff7700;" text="yes">
+               <font>
+                  <Font name="Century Schoolbook Bold Italic" size="14.0"/>
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT"/>
+               </cursor>
+            </Button>
+            <Button fx:id="cancelBTN" blendMode="MULTIPLY" mnemonicParsing="false" onAction="#cancelHandler"
+                    prefHeight="42.0" prefWidth="65.0" style="-fx-background-color: #ff7700;" text="no">
+               <font>
+                  <Font name="Century Schoolbook Bold Italic" size="14.0"/>
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND"/>
+               </cursor>
+            </Button>
+         </HBox>
+         <Label fx:id="errorLBL" alignment="CENTER" prefHeight="20.0" prefWidth="319.0" textFill="#d4153f">
+            <font>
+               <Font name="Century Schoolbook Bold Italic" size="16.0"/>
+            </font>
+         </Label>
+      </VBox>
+   </center>
+</BorderPane>

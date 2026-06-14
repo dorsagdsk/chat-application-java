@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="580.0" prefWidth="533.0" style="-fx-background-color: #756969; -fx-border-width: 10; -fx-border-color: #ff7700;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ShowChatForGroupMemberController">
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <padding>
+        <Insets right="-195.0" />
+    </padding>
+    <children>
+        <Label fx:id="groupNameLBL" alignment="CENTER" layoutX="176.0" layoutY="23.0" prefHeight="36.0" prefWidth="115.0" style="-fx-background-color: #756969;">
+            <font>
+                <Font name="Cooper Black" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="messageFLD" layoutX="20.0" layoutY="500.0" prefHeight="52.0" prefWidth="427.0" promptText="Type here" style="-fx-border-color: black; -fx-border-width: 4;">
+            <font>
+                <Font name="Cooper Black" size="16.0" />
+            </font>
+        </TextField>
+        <Button fx:id="sendBTN" blendMode="MULTIPLY" layoutX="464.0" layoutY="508.0" mnemonicParsing="false" onAction="#sendHandler" prefHeight="36.0" prefWidth="41.0" style="-fx-background-color: #e6e6fa; -fx-border-color: black; -fx-border-width: 2;" text="➜">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="11.0" />
+            </font></Button>
+        <Label fx:id="errorLBL" alignment="CENTER" layoutX="192.0" layoutY="388.0" prefHeight="20.0" prefWidth="410.0" textFill="#d4153f">
+            <font>
+                <Font name="Century Schoolbook Bold Italic" size="16.0" />
+            </font>
+        </Label>
+        <TableView fx:id="chatTable" layoutX="20.0" layoutY="102.0" prefHeight="398.0" prefWidth="494.0" style="-fx-border-color: black; -fx-border-width: 3;">
+            <columns>
+                <TableColumn fx:id="messageColumn" prefWidth="262.6666660308838" text="Message" />
+                <TableColumn fx:id="senderUsernameColumn" prefWidth="117.3333740234375" text="Sender" />
+                <TableColumn fx:id="dateAndTimeColumn" prefWidth="110.0" text="Time" />
+            </columns>
+        </TableView>
+      <MenuBar layoutX="432.0" layoutY="28.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="|||&gt;||&gt;">
+            <items>
+              <MenuItem fx:id="editBTN" mnemonicParsing="false" onAction="#editHandler" text="Edite" />
+                  <MenuItem fx:id="deleteMessageBTN" mnemonicParsing="false" onAction="#deleteMessageHandler" text="Delete" />
+                  <MenuItem fx:id="closeBTN" mnemonicParsing="false" onAction="#closeHandler" text="Back" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="14.0" layoutY="28.0" mnemonicParsing="false" onAction="#closeHandler" prefHeight="50.0" prefWidth="73.0" style="-fx-background-color: #756969;" text="⟵">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="84.0" fitWidth="96.0" layoutX="87.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/samm3_121.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="360.0" layoutY="28.0" mnemonicParsing="false" onAction="#openLinkHandler" prefHeight="25.0" prefWidth="73.0" text="Open Linlk" />
+    </children>
+</AnchorPane>

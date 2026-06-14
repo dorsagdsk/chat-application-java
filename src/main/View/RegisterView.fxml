@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="536.0" style="-fx-background-color: black; -fx-border-color: #ff7700; -fx-border-width: 6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController">
+   <top>
+      <VBox alignment="CENTER" prefHeight="44.0" prefWidth="588.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="register page">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff8000" />
+                        <Stop color="#ff2d0d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="Monotype Corsiva" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="120.0">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="105.0" style="-fx-background-color: #756969;" text="   name" textFill="#fff800fa">
+                           <font>
+                              <Font name="MV Boli" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="nameFLD" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="115.0">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: #756969;" text=" last name" textFill="#fff800">
+                           <font>
+                              <Font name="MV Boli" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="lastFLD" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="115.0">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="108.0" style="-fx-background-color: #756969;" text=" username" textFill="#fff800">
+                           <font>
+                              <Font name="MV Boli" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="userFLD" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="115.0">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="103.0" style="-fx-background-color: #756969;" text=" password" textFill="#fff800">
+                           <font>
+                              <Font name="MV Boli" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="passFLD" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="65.0" style="-fx-background-color: #756969;" text=" email" textFill="#fff800">
+                           <font>
+                              <Font name="MV Boli" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="emailFLD" prefHeight="39.0" prefWidth="199.0" />
+                        <Button fx:id="checkBTN" mnemonicParsing="false" onAction="#checkAc" prefHeight="39.0" prefWidth="85.0" text="Check" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="33.0" prefWidth="515.0" spacing="115.0">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="63.0" style="-fx-background-color: #756969;" text=" code" textFill="#fff800">
+                           <font>
+                              <Font name="MV Boli" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="codeFLD" prefHeight="39.0" prefWidth="197.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="170.0">
+                     <children>
+                        <Label prefHeight="14.0" prefWidth="232.0" text="           Already a membar?" textFill="RED">
+                           <font>
+                              <Font name="Century Gothic Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="loginBTN" mnemonicParsing="false" onAction="#loginAc" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: black;" text="log in" textFill="#fc0000">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="270.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backBTN" mnemonicParsing="false" onAction="#backAc" text="back" />
+            <Button fx:id="BTNreg" mnemonicParsing="false" onAction="#regAc" text="register" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
